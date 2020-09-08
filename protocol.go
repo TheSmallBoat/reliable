@@ -2,10 +2,11 @@ package reliable
 
 import (
 	"fmt"
-	"github.com/lithdew/seq"
 	"io"
 	"sync"
 	"time"
+
+	"github.com/lithdew/seq"
 )
 
 type ProtocolPacketHandler func(buf []byte, seq uint16)

@@ -4,12 +4,13 @@ import (
 	"bytes"
 	"errors"
 	"flag"
-	"github.com/lithdew/reliable"
 	"io"
 	"log"
 	"net"
 	"sync/atomic"
 	"time"
+
+	"github.com/TheSmallBoat/reliable"
 )
 
 var (

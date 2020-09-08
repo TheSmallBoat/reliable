@@ -2,8 +2,6 @@ package reliable
 
 import (
 	"bytes"
-	"github.com/stretchr/testify/require"
-	"go.uber.org/goleak"
 	"net"
 	"sort"
 	"strconv"
@@ -11,6 +9,9 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/require"
+	"go.uber.org/goleak"
 )
 
 func newPacketConn(t testing.TB, addr string) net.PacketConn {

@@ -3,8 +3,6 @@ package main
 import (
 	"bytes"
 	"errors"
-	"github.com/davecgh/go-spew/spew"
-	"github.com/lithdew/reliable"
 	"io"
 	"log"
 	"net"
@@ -13,6 +11,9 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/TheSmallBoat/reliable"
+	"github.com/davecgh/go-spew/spew"
 )
 
 var (
