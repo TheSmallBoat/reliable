@@ -1,11 +1,12 @@
 package reliable
 
 import (
-	"github.com/lithdew/bytesutil"
-	"github.com/valyala/bytebufferpool"
 	"io"
 	"math/bits"
 	"time"
+
+	"github.com/lithdew/bytesutil"
+	"github.com/valyala/bytebufferpool"
 )
 
 const ACKBitsetSize = 32

@@ -1,12 +1,13 @@
 package reliable
 
 import (
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-	"github.com/valyala/bytebufferpool"
 	"math"
 	"testing"
 	"testing/quick"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"github.com/valyala/bytebufferpool"
 )
 
 func TestEncodeDecodePacketHeader(t *testing.T) {

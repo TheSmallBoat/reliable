@@ -2,13 +2,14 @@ package reliable
 
 import (
 	"bytes"
-	"github.com/stretchr/testify/require"
-	"go.uber.org/goleak"
 	"math"
 	"net"
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/require"
+	"go.uber.org/goleak"
 )
 
 func TestConnWriteReliablePacket(t *testing.T) {

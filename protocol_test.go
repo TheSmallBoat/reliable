@@ -1,10 +1,11 @@
 package reliable
 
 import (
-	"github.com/stretchr/testify/require"
-	"go.uber.org/goleak"
 	"sync"
 	"testing"
+
+	"github.com/stretchr/testify/require"
+	"go.uber.org/goleak"
 )
 
 func testConnWaitForWriteDetails(inc uint16) func(t testing.TB) {
